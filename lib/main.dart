@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medical_app_ui/modules/home/view.dart';
 import 'package:medical_app_ui/modules/onboarding/view.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: OnboardingScreen(),
+      home: HomeScreen(),
     );
   }
 }
