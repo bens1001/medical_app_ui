@@ -20,7 +20,7 @@ class AppBarTitle extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(top: 5),
+          padding: EdgeInsets.only(top: 5),
           child: Text(
             'Abdelhamid Bensalah',
             style: TextStyle(
