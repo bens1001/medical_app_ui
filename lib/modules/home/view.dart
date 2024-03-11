@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:medical_app_ui/modules/home/widgets/appbar_title.dart';
 import 'package:medical_app_ui/modules/home/widgets/bottom_nav_bar.dart';
 import 'package:medical_app_ui/modules/home/widgets/get_started_container.dart';
+import 'package:medical_app_ui/modules/home/widgets/pageview_containers.dart';
 import 'package:medical_app_ui/modules/home/widgets/search_bar_container.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -30,6 +31,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             GetStartedContainer(),
             SearchBarContainer(),
+            PageviewContainers(),
           ],
         ),
       ),
