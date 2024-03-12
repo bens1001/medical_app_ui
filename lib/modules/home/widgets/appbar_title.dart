@@ -8,7 +8,7 @@ class AppBarTitle extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: const EdgeInsets.only(top: 5),
+          padding: EdgeInsets.only(top: 10, left: 5),
           child: Text(
             'Hello,',
             style: TextStyle(
@@ -20,9 +20,9 @@ class AppBarTitle extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(top: 5),
+          padding: EdgeInsets.only(top: 5, left: 5),
           child: Text(
-            'Abdelhamid Bensalah',
+            'User',
             style: TextStyle(
               fontSize: 25,
               fontFamily: 'Inter',

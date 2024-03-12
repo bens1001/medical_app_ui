@@ -27,7 +27,7 @@ class GetStartedButton extends StatelessWidget {
             ),
           ),
           onPressed: () {
-            Get.to(() => HomeScreen());
+            Get.to(() => const HomeScreen());
           },
         ),
       ),
