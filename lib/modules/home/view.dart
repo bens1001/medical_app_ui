@@ -27,42 +27,49 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.only(left: 20, right: 20, top: 40),
+      body: SingleChildScrollView(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            const GetStartedContainer(),
-            const SearchBarContainer(),
-            ListviewCategoryContainers(),
             Padding(
-              padding: const EdgeInsets.only(top: 20, left: 5, right: 5),
-              child: Row(
+              padding: const EdgeInsets.only(left: 20, right: 20, top: 40),
+              child: Column(
                 children: [
-                  const Text(
-                    'Doctor List',
-                    style: TextStyle(
-                      fontSize: 25,
-                      fontFamily: 'Inter',
-                      fontWeight: FontWeight.w600,
+                  const GetStartedContainer(),
+                  const SearchBarContainer(),
+                  ListviewCategoryContainers(),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20, left: 5, right: 5),
+                    child: Row(
+                      children: [
+                        const Text(
+                          'Doctor List',
+                          style: TextStyle(
+                            fontSize: 25,
+                            fontFamily: 'Inter',
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                        const Spacer(),
+                        TextButton(
+                          onPressed: () {},
+                          child: const Text(
+                            'See All',
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontFamily: 'Inter',
+                              fontWeight: FontWeight.w400,
+                              color: Color.fromARGB(158, 158, 158, 158),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
-                  const Spacer(),
-                  TextButton(
-                    onPressed: () {},
-                    child: const Text(
-                      'See All',
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontFamily: 'Inter',
-                        fontWeight: FontWeight.w400,
-                        color: Color.fromARGB(158, 158, 158, 158),
-                      ),
-                    ),
-                  ),
+                  ListviewDoctorContainers(),
                 ],
               ),
             ),
-            ListviewDoctorContainers(),
           ],
         ),
       ),
