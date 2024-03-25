@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:medical_app_ui/modules/home/view.dart';
 import 'package:medical_app_ui/modules/onboarding/Widgets/get_started_button.dart';
 
 class OnboardingScreen extends StatelessWidget {
@@ -35,7 +33,7 @@ class OnboardingScreen extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.bold,
-                    fontSize: 28,
+                    fontSize: 20,
                     color: Color.fromARGB(255, 50, 49, 58),
                   ),
                   textAlign: TextAlign.start,
@@ -48,7 +46,7 @@ class OnboardingScreen extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.normal,
-                    fontSize: 17,
+                    fontSize: 12,
                     color: Color.fromARGB(255, 50, 49, 58),
                   ),
                   textAlign: TextAlign.start,
