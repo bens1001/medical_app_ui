@@ -23,11 +23,11 @@ class OnboardingScreen extends StatelessWidget {
             children: [
               Image.asset(
                 'assets/images/doctor-1.png',
-                height: 650,
-                width: 650,
+                height: 500,
+                width: 500,
               ),
               const Padding(
-                padding: EdgeInsets.only(left: 20, top: 20),
+                padding: EdgeInsets.only(left: 20, top: 5),
                 child: Text(
                   'All specialists in one app',
                   style: TextStyle(
