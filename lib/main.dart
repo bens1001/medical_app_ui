@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:medical_app_ui/modules/onboarding/view.dart';
 import 'package:get/get.dart';
+import 'package:medical_app_ui/translations/messages.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +22,8 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
+      translations: Message(),
+      locale: const Locale('en'),
       home: const OnboardingScreen(),
     );
   }

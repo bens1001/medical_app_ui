@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class AppBarTitle extends StatelessWidget {
-  const AppBarTitle({super.key});
+  AppBarTitle({super.key});
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding: EdgeInsets.only(top: 10, left: 5),
+          padding: const EdgeInsets.only(top: 10, left: 5),
           child: Text(
-            'Hello,',
-            style: TextStyle(
+            'h'.tr,
+            style: const TextStyle(
               fontFamily: 'Inter',
               fontWeight: FontWeight.normal,
               fontSize: 20,

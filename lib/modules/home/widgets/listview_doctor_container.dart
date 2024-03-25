@@ -24,7 +24,7 @@ class ListviewDoctorContainer extends StatelessWidget {
       ),
       height: 60,
       child: Padding(
-        padding: const EdgeInsets.all(25),
+        padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
         child: Column(
           children: [
             Stack(
@@ -85,7 +85,7 @@ class ListviewDoctorContainer extends StatelessWidget {
             Text(
               speciality,
               style: const TextStyle(
-                fontSize: 15,
+                fontSize: 13,
                 fontFamily: 'Inter',
                 fontWeight: FontWeight.normal,
                 color: Colors.grey,
