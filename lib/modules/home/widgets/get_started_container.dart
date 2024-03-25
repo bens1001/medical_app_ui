@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class GetStartedContainer extends StatelessWidget {
   const GetStartedContainer({super.key});
@@ -22,11 +23,11 @@ class GetStartedContainer extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Padding(
-                  padding: EdgeInsets.only(top: 10),
+                Padding(
+                  padding: const EdgeInsets.only(top: 10),
                   child: Text(
-                    'How do you feel?',
-                    style: TextStyle(
+                    'get_started_container_title'.tr,
+                    style: const TextStyle(
                       color: Color.fromARGB(255, 50, 49, 58),
                       fontFamily: 'Inter',
                       fontWeight: FontWeight.bold,
@@ -34,11 +35,11 @@ class GetStartedContainer extends StatelessWidget {
                     ),
                   ),
                 ),
-                const Padding(
-                  padding: EdgeInsets.only(top: 10, bottom: 20),
+                Padding(
+                  padding: const EdgeInsets.only(top: 10, bottom: 20),
                   child: Text(
-                    'Fill out your medical card right now',
-                    style: TextStyle(
+                    'get_started_container_desc'.tr,
+                    style: const TextStyle(
                       color: Color.fromARGB(255, 50, 49, 58),
                       fontFamily: 'Inter',
                       fontWeight: FontWeight.normal,
@@ -46,28 +47,31 @@ class GetStartedContainer extends StatelessWidget {
                     ),
                   ),
                 ),
-                SizedBox(
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color.fromARGB(255, 138, 134, 226),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15),
+                ScreenType.Phone.name == "Phone"
+                    ? Container()
+                    : SizedBox(
+                        width: double.infinity,
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor:
+                                const Color.fromARGB(255, 138, 134, 226),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15),
+                            ),
+                            minimumSize: const Size(double.infinity, 40),
+                          ),
+                          child: Text(
+                            'button_text'.tr,
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 15,
+                              fontFamily: 'Inter',
+                              fontWeight: FontWeight.normal,
+                            ),
+                          ),
+                          onPressed: () {},
+                        ),
                       ),
-                      minimumSize: const Size(double.infinity, 40),
-                    ),
-                    child: const Text(
-                      'Get Started',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 15,
-                        fontFamily: 'Inter',
-                        fontWeight: FontWeight.normal,
-                      ),
-                    ),
-                    onPressed: () {},
-                  ),
-                ),
               ],
             ),
           ),

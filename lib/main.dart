@@ -23,8 +23,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       translations: Message(),
-      locale: const Locale('en'),
-      home: const OnboardingScreen(),
+      locale: const Locale('ar'),
+      home: OnboardingScreen(),
     );
   }
 }

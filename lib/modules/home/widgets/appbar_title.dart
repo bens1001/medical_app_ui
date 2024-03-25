@@ -11,7 +11,7 @@ class AppBarTitle extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: 10, left: 5),
           child: Text(
-            'h'.tr,
+            'hello_msg'.tr,
             style: const TextStyle(
               fontFamily: 'Inter',
               fontWeight: FontWeight.normal,
@@ -23,8 +23,8 @@ class AppBarTitle extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(top: 5, left: 5),
           child: Text(
-            'User',
-            style: TextStyle(
+            'user_name'.tr,
+            style: const TextStyle(
               fontSize: 25,
               fontFamily: 'Inter',
               fontWeight: FontWeight.bold,

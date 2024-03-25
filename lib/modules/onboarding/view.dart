@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:medical_app_ui/modules/onboarding/Widgets/get_started_button.dart';
+import 'package:get/get.dart';
+import 'package:medical_app_ui/translations/controller.dart';
 
 class OnboardingScreen extends StatelessWidget {
-  const OnboardingScreen({super.key});
+  OnboardingScreen({super.key});
+  final messageCtrl = Get.put(MessageController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,18 +22,18 @@ class OnboardingScreen extends StatelessWidget {
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.end,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image.asset(
                 'assets/images/doctor-1.png',
                 height: 500,
                 width: 500,
               ),
-              const Padding(
+              Padding(
                 padding: EdgeInsets.only(left: 20, top: 5),
                 child: Text(
-                  'All specialists in one app',
-                  style: TextStyle(
+                  'onboarding_title'.tr,
+                  style: const TextStyle(
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
@@ -39,11 +42,11 @@ class OnboardingScreen extends StatelessWidget {
                   textAlign: TextAlign.start,
                 ),
               ),
-              const Padding(
-                padding: EdgeInsets.only(left: 20, top: 15, bottom: 20),
+              Padding(
+                padding: const EdgeInsets.only(left: 20, top: 15, bottom: 20),
                 child: Text(
-                  'Find your doctor and make an\n appointment with one tap.',
-                  style: TextStyle(
+                  'onboarding_desc'.tr,
+                  style: const TextStyle(
                     fontFamily: 'Inter',
                     fontWeight: FontWeight.normal,
                     fontSize: 12,

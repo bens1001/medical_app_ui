@@ -3,6 +3,7 @@ import 'package:medical_app_ui/modules/home/view.dart';
 import 'package:get/get.dart';
 
 class GetStartedButton extends StatelessWidget {
+  const GetStartedButton({super.key});
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -17,9 +18,9 @@ class GetStartedButton extends StatelessWidget {
             ),
             minimumSize: const Size(double.infinity, 50),
           ),
-          child: const Text(
-            'Get Started',
-            style: TextStyle(
+          child: Text(
+            'button_text'.tr,
+            style: const TextStyle(
               color: Colors.white,
               fontSize: 17,
               fontFamily: 'Inter',
@@ -27,7 +28,7 @@ class GetStartedButton extends StatelessWidget {
             ),
           ),
           onPressed: () {
-            Get.to(() => HomeScreen());
+            Get.to(() => HomeScreenResponsive());
           },
         ),
       ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SearchBarContainer extends StatelessWidget {
   const SearchBarContainer({super.key});
@@ -32,9 +33,9 @@ class SearchBarContainer extends StatelessWidget {
                     fontWeight: FontWeight.w400,
                   ),
                   controller: TextEditingController(),
-                  decoration: const InputDecoration(
-                    hintText: 'How can we help you?',
-                    hintStyle: TextStyle(
+                  decoration: InputDecoration(
+                    hintText: 'search_hint'.tr,
+                    hintStyle: const TextStyle(
                       color: Color.fromARGB(158, 158, 158, 158),
                       fontSize: 15,
                       fontFamily: 'Inter',

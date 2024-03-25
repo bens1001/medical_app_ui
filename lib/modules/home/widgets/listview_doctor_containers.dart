@@ -15,7 +15,7 @@ class ListviewDoctorContainers extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(top: 15),
-      height: 225,
+      height: 200,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: homeController.doctor_containers.length,
